@@ -1,0 +1,142 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; /* Global font for consistency */
+}
+
+body {
+  background-color: #f5f5f5; /* Light background for better contrast */
+  color: #333; /* Dark text for readability */
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6; /* Improved readability */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+/* Main App container */
+.App {
+  width: 100%;
+  max-width: 1200px; /* Set a maximum width for large screens */
+  text-align: center;
+  background-color: white; /* White background for a clean look */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 40px 20px; /* Add padding for spacing */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.App:hover {
+  transform: scale(1.02); /* Slight scaling effect on hover for interactivity */
+}
+
+/* Header Styles */
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 15px; /* Rounded corners for a soft look */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin-bottom: 30px; /* Space below the header */
+  transition: transform 0.2s ease; /* Hover effect */
+}
+
+.App-header:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Logo Styles */
+.App-logo {
+  height: 80px; /* Increased size for better visibility */
+  margin-bottom: 20px; /* Spacing between logo and header */
+  pointer-events: none; /* Prevent interactions with logo */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Smooth spin animation */
+  }
+}
+
+/* Title and Description */
+.App-title {
+  font-size: 2rem; /* Larger, responsive title */
+  font-weight: 700;
+  color: #282c34;
+  margin-bottom: 20px; /* Space below title */
+}
+
+.App-description {
+  font-size: 1.25rem; /* Smaller but readable description */
+  color: #555;
+  margin-bottom: 20px; /* Add space below description */
+}
+
+/* Links */
+.App-link {
+  color: #61dafb; /* Stylish blue */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px; /* Add padding for clickable area */
+  border-radius: 25px; /* Rounded button-like appearance */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  font-weight: bold; /* Make the link more prominent */
+}
+
+.App-link:hover {
+  background-color: rgba(97, 218, 251, 0.2); /* Light hover effect */
+  color: #282c34; /* Change text color on hover */
+}
+
+/* Spinner Styles (for loading) */
+.App-spinner {
+  margin: 20px auto;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #282c34; /* Darker spinner color */
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+    max-width: 100%; /* Remove max-width for smaller screens */
+  }
+
+  .App-logo {
+    height: 50px; /* Adjust logo size on small screens */
+  }
+
+  .App-title {
+    font-size: 1.5rem; /* Smaller title for mobile */
+  }
+
+  .App-description {
+    font-size: 1rem; /* Adjust description for mobile */
+  }
+
+  .App-link {
+    font-size: 0.9rem; /* Adjust link size for mobile */
+    padding: 8px 16px; /* Slightly smaller button on mobile */
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
