@@ -44,7 +44,7 @@ const CustomerDetails = () => {
           setAccountDetails(data);
           setFormData(data); // Initialize form data with account details
         } else {
-          console.error('No account found for this user.');
+          console.error('No accounts found for this user.');
         }
       } catch (error) {
         console.error('Error fetching account details:', error);
